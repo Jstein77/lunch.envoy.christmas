@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
+      <<link rel="apple-touch-icon">
+      <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
@@ -13,7 +15,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <
         <style>
         .wrapper {
             text-align: center;
@@ -28,6 +29,8 @@
         .button-right{
           position: relative;
           right: 20px;
+          margin-right: 25px;
+          margin-top: 25%;
         }
 
         </style>
@@ -40,8 +43,8 @@
 
         <!-- Add your site or application content here -->
         <div class="wrapper">
-          <button class="button-left">Food</button>
-          <button class="button-right" id="count">Count</button>
+          <button class="btn btn-primary button-left">Food</button>
+          <button class="btn btn-primary button-right" id="count">Count</button>
         </div>
         <div class="wrapper" id="output">0</div>
 
@@ -51,20 +54,20 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-103226377-1','auto');ga('send','pageview');
+            ga('create','UA-103217093-1','auto');ga('send','pageview');
+
 var n = 0;
 
 $('#count').click(function(){
   n++;
   document.getElementById('output').innerHTML = n;
-  ga('send', 'event', 'Food', 'count', n);
+  ga('send', 'event', 'Food', 'count', 1);
 })
 
         </script>
